@@ -1,6 +1,6 @@
 import fs from "fs"
 
-//* Since io queue has priority than check queue and timer queue , and these queues run at defer of the io function so timeout and immediate will run after data.toString()
+//* Since io queue has priority than check queue and timer queue , and these queues (check and timer) run at defer of the io function so timeout and immediate will run after data.toString()
 fs.readFile("./info.txt" , (err ,data) => {
     if(err){
         console.log(err)
