@@ -8,7 +8,7 @@ import fs from "fs"
 // Close Callbacks 
 //  */
 
-//* yaha below bhi lagega although timers have higher priority than io , but the thing is that execution order upar likha hua hai , jaise hi setTimeout aata hai , waise hi schedule to hojata hai wo task queue ,but wo ready nahi hota because of dealay time, to jaise jaise execution aage badhta hai waise waise execution hota hai , accha IO wale mae koi delay nahi isliye execution saath ke saath hojata hai...
+//* yaha below bhi lagega although timers have higher priority than io , but the thing is that execution order of 'task queue' upar likha hua hai , jaise hi setTimeout aata hai , waise hi schedule to hojata hai wo task queue ,but wo ready nahi hota because of dealay time, to jaise jaise execution aage badhta hai waise waise execution hota hai , accha IO wale mae koi delay nahi isliye execution saath ke saath hojata hai...
 
 setTimeout(() => console.log("hello") , 1000)
 fs.readFile("./info.txt" , (err , data) => {
