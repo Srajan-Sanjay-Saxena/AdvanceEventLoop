@@ -10,4 +10,4 @@ fs.readFile("./info.txt" , (err , data) => {
 })
 setTimeout(() => console.log("hello") , 0)
 setImmediate(() => console.log("THis is setimmediate"));
-// for (let i=0 ; i<100000000 ; i++){}
+for (let i=0 ; i<100000000 ; i++){}
